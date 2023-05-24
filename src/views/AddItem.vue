@@ -15,7 +15,6 @@
         <v-row no-gutters>
           <v-btn
             type="submit"
-            @click="addItem"
             block
             class="mt-2"
             text="Add Item"
@@ -34,9 +33,11 @@
 import { ref } from "vue"
 import { useItemStore } from "../store/app"
 import { useRouter } from "vue-router"
+import { useRoute } from "vue-router"
 
 const store = useItemStore()
 const router = useRouter()
+const route = useRoute()
 const name = ref("")
 const qty = ref(1)
 const rules = [
