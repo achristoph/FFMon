@@ -1,0 +1,4 @@
+cup-outline
+fruit-grapes-outline
+food-steak
+egg-outline
