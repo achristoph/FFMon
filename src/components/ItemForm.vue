@@ -1,7 +1,6 @@
 <template>
   <v-form @submit.prevent="actionFn">
     <h3>{{ props.actionType }}</h3>
-    {{ getItem(route.params.id) }}
     <v-text-field
       v-model="getItem(route.params.id).name"
       label="Name"
